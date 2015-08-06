@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link href="Level2CSS.css" rel="stylesheet" style="text/css">
+        <script src="processing-1.4.1.js"></script>
+        <script type="text/processing" data-processing-target="mycanvas" src="Level2.js">
+        </script>
+    </head>
+
+ <div class="container">
+		<canvas id="canvas">
+			Aww, your browser doesn't support HTML5!
+		</canvas>
+
+		<div id="mainMenu">
+
+			<p class="info">
+				usethe left or right arrow key to move and space to (re) start...
+			</p>
+			<a class="button" href="javascript:init()">Play</a>
+		</div>
+		
+		<div id="gameOverMenu">
+			<h1>game over!</h1>
+			<h3 id="go_score">you scored 0 points</h3>
+		</div>
+		
+		<!-- Preloading image ;) -->
+		<img id="sprite" src="whatevss2.png"/>
+
+		<div id="scoreBoard">
+			<p id="score">0</p>
+		</div>
+	</div>
+<body>
+<button type="button" id="backlevel" onclick="window.open( href='AngryGirlsLevel1.html')" >Go Back To Level 1</button>
+</body>
+<canvas id="mycanvas"></canvas>
+        
+</html>
